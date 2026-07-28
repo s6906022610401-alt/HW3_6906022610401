@@ -97,9 +97,27 @@
 
             <br>
 
-            <a href="cart.html" class="btn">
+            <label><strong>เลือกไซส์</strong></label><br><br>
+
+            <select id="size">
+                <option value="">-- กรุณาเลือกไซส์ --</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+            </select>
+
+            <br><br>
+
+            <label><strong>จำนวน</strong></label><br><br>
+
+            <input type="number" id="qty" value="1" min="1">
+
+            <br><br>
+
+            <button class="btn" onclick="addToCart()">
                 เพิ่มลงตะกร้า
-            </a>
+            </button>
 
             <a href="products.html" class="btn">
                 กลับหน้าสินค้า
@@ -124,6 +142,39 @@
         </div>
 
     </div>
+
+    <script>
+        function addToCart() {
+
+            let size = document.getElementById("size").value;
+            let qty = document.getElementById("qty").value;
+
+            if (size === "") {
+                alert("กรุณาเลือกไซส์สินค้า");
+                return;
+            }
+
+            let product = {
+                name: "เสื้อยืดแฟชั่น",
+                price: 390,
+                size: size,
+                qty: parseInt(qty)
+            };
+
+            // อ่านข้อมูลเดิม
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+            // เพิ่มสินค้าใหม่
+            cart.push(product);
+
+            // บันทึกกลับ
+            localStorage.setItem("cart", JSON.stringify(cart));
+
+            alert("เพิ่มสินค้าเข้าตะกร้าเรียบร้อย");
+
+            window.location.href = "cart.html";
+        }
+    </script>
 
 </body>
 
