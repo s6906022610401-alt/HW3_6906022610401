@@ -17,7 +17,7 @@ body {
 
 
 .header {
-    background: #0077cc;
+    background: hsl(278, 100%, 60%);
     color: white;
     text-align: center;
     padding: 25px;
@@ -49,15 +49,15 @@ body {
 }
 
 .topmenu ul li a:hover {
-    background: #0077cc;
+    background:hsl(278, 100%, 60%);
 }
 
-/* Side Menu */
+/* Menu */
 
 .sidebar {
     float: left;
     width: 20%;
-    background: #eeeeee;
+    background: white;
     min-height: 900px;
     padding: 20px;
 }
@@ -80,18 +80,14 @@ body {
 }
 
 .sidebar ul li a:hover {
-    color: #0077cc;
+    color: hsl(278, 100%, 60%);
 }
-
-/* Content */
 
 .content {
     float: left;
     width: 80%;
     padding: 20px;
 }
-
-/* Product Card */
 
 .product {
     float: left;
@@ -122,12 +118,25 @@ body {
 }
 
 .btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     padding: 10px 20px;
     background: #0077cc;
     color: white;
     text-decoration: none;
     border-radius: 5px;
+
+}
+
+.btn1 {
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    background: #cc0700;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+
 }
 
 .btn:hover {
@@ -148,7 +157,7 @@ td {
 }
 
 th {
-    background: #0077cc;
+    background: hsl(278, 100%, 60%);
     color: white;
 }
 
