@@ -57,7 +57,7 @@ body {
 .sidebar {
     float: left;
     width: 20%;
-    background: white;
+    background: rgb(255, 248, 248);
     min-height: 900px;
     padding: 20px;
 }
@@ -87,6 +87,17 @@ body {
     float: left;
     width: 80%;
     padding: 20px;
+}
+
+.confirmation-message{
+    float: left;
+    width: 100%;
+    border: 2px solid #05ff26;
+    background: rgb(191, 255, 204);
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
 }
 
 .product {
