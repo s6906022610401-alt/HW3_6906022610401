@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 .container {
-    width: 1200px;
+    width: 100vw;
     margin: auto;
     background: #fff;
 }
@@ -20,7 +21,7 @@ body {
     background: hsl(278, 100%, 60%);
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
 .header h1 {
@@ -29,7 +30,7 @@ body {
 
 
 .topmenu {
-    background: #333;
+    background: #5a0c79;
 }
 
 .topmenu ul {
@@ -57,9 +58,9 @@ body {
 .sidebar {
     float: left;
     width: 20%;
-    background: rgb(255, 248, 248);
-    min-height: 900px;
+    background: rgb(255, 253, 253);
     padding: 20px;
+    min-height: 1000px;
 }
 
 .sidebar h3 {
@@ -182,7 +183,7 @@ td {
 
 .footer {
     clear: both;
-    background: #333;
+    background: #5a0c79;
     color: white;
     text-align: center;
     padding: 20px;
